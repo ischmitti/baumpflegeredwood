@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
+    <title>Baumpflege Redwood</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/#hero"><img src="static/logos/logo.png" alt="logo farbig"></a>
+          <button id="toggle-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <a class="nav-link active" href="#features">Dienstleistungen</a>
+            <a class="nav-link active" href="#about">Über uns</a>
+            <a class="nav-link active" href="#contact">Kontakt</a>            
+            <a class="nav-link active" href="#gallery">Galerie</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="hero">
+      <video id="heroVideo" playsinline autoplay poster="static/images/heroImage.JPG">
+        <source src="static/video/HeroVideo.mp4" type="video/mp4" media="all and (max-width: 768px)">
+      </video>
+      <div class="hero-content">
+        <h1>Baumpflege Redwood</h1>
+        <h5>Ihr Berater und Dienstleister rund um Ihre Bäume in Frankfurt am Main und Umgebung.</h5>
+      </div>
+    </section>
+    <section id="features">
+      <div class="global-container">
+        <div class="title">
+          <h2>Unsere Dienstleistungen.</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/heart-circle-check-solid.svg" alt="baumpflege">
+            <h3>
+              Baumpflege
+            </h3>
+            <p>Auch Ihr Baum verdient nur das Beste.</p>
+            <details>
+                Bäume in städtischen Siedlungsgebieten erhöhen unsere Lebensqualität, sind jedoch hohen Stressfaktoren ausgesetzt. Unter anderem Bodenverdichtungen, Abgasen und physiologischen Schäden. Um einen Baum gesund und seiner Umgebung ergonomisch anzupassen und zu erhalten, bedarf dieser Pflege, hauptsächlich in Form von Schnittmaßnahmen. Um die Verkehrssicherheit immer gewährleisten zu können, muss das Lichtraumprofil an Straßen und Gehwegen eingehalten werden. Verfaulte, bruchgefährdete Äste müssen entfernt werden.
+              </details>
+          </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/magnifying-glass-solid.svg" alt="baumkontrollen">
+            <h3>
+              Baumkontrollen
+            </h3>
+            <p>Vertrauen ist gut, Kontrolle ist besser.</p>
+            <details>
+              Das ein Baum Bruch oder Umsturz gefährdet ist, ist nicht immer offensichtlich und für einen Leihen nicht erkennbar. Im Sinne der Verkehrssicherheit und der Erhaltung von Bäumen sind daher Regelmäßige Baumkontrollen nötig um diese zu gewährleisten. Unter Baumkontrolle versteht man erst einmal, die Inaugenscheinnahme im Sinne der Verkehrssicherungspflicht durch einen Zertifizierten Baumkontrolleur. In manchen Fällen ist eine eingehende Untersuchung nötig, da mögliche Gefahrenquellen erst von oben bzw. im Baum sichtbar werden.
+            </details>
+            </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/lock-solid.svg" alt="baumsicherung">
+            <h3>
+              Baumsicherungen
+            </h3>
+            <p>Sicher ist sicher.</p>
+            <details>
+              Manche Äste, vor allem an größeren oder alten Bäumen, sind durch Wind und Stürme bruchgefährdet. Um Gefahrenpotential für Bauwerke, Personen oder Verkehr zu minimieren, kann ein für den Baum verletzungsfreies dynamisches Sicherungssystem eingebaut werden. Damit kann der Baum in seiner Form erhalten bleiben.
+            </details>
+          </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/tree-solid.svg" alt="baumfällungen">
+            <h3>
+              Fällungen
+            </h3>
+            <p></p>
+            <details>
+              Manchmal ist es unvermeidbar einen Baum zu fällen, da dieser für ein neues Bauvorhaben Platz schaffen muss oder durch Erkrankung eine Gefahr für seine Umgebung darstellt. Durch vorsichtiges abseilen von Kronen und Stammstücken, kann ein sicheres beseitigen des Baumes, auch an schwierigen Stellen durchgeführt werden. In manchen Kommunen, muss ab einem bestimmten Stammdurchmesser, eine behördliche Fällgenehmigung eingeholt werden, bevor der Baum gefällt werden darf. Wir helfen Ihnen gerne dabei diese einzuholen. 
+              <br>
+              <a href="" rel="noopener noreferrer" target="_blank" >Den Antrag für Fällungen in Frankfurt finden Sie hier.</a>
+            </details>
+          </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/apple-brands.svg" alt="Obstbaumpflege">
+            <h3>
+              Obstbaumpflege
+            </h3>
+            <p></p>
+            <details>
+              Ihr Obstbaum ist zu groß geworden um ihn selbst zu schneiden, oder wurde lange Zeit vernachlässigt? Wir helfen Ihnen gerne dabei Ihren Obstbaum wieder in Schuss zu bringen, damit Ihre mühen wieder Früchte tragen.
+            </details>
+          </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/seedling-solid.svg" alt="Neupflanzungen">
+            <h3>
+              Neupflanzungen
+            </h3>
+            <p></p>
+            <details>
+              Bäume sind unvermeidlich einer der wichtigsten Bestandteile unseres Ökosystems. Wir erfreuen uns an ihnen in unseren Straßen, Gärten und Parkanlagen. Jedoch ist nicht jeder Baum für jedes Umfeld geeignet. Möchten sie einen Großen oder Kleinen Baum? Soll er Früchte tragen? Wie viel Schatten soll er Spenden? Was ist in 40 Jahren mit ihm? Dies sind Fragen, mit denen man sich bei der Pflanzung auseinandersetzen muss. Wir Beraten sie gerne.
+            </details>
+          </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/seedling-solid.svg" alt="Neupflanzungen">
+            <h3>
+              Gartenpflege
+            </h3>
+              <p></p>
+              <details>
+                Der Weg zum Baum, führt in den meisten Fällen durch den Hof oder Garten. Deshalb reicht unser Dienstleistungsumfeld mittlerweile über den Baum hinaus. Hecken und Gartenpflege gehören genauso zu unserem Dienstleistungsfeld, wie Bäume zu Pflanzen und Pflegen.
+              </details>
+          </div>
+          <div class="col-lg-3 col-md-5 m-3 feature-card">  
+            <img class="icon" src="static/images/seedling-solid.svg" alt="Neupflanzungen">
+            <h3>
+              Holzverarbeitung
+            </h3>
+            <p></p>
+            <details>
+              Im Zuge dessen, dass wir bedingt durch unsere Arbeit nicht alltägliches Nutzholz zur Verfügung haben, ist es in manchen Fällen einfach zu Schade zum Verbrennen oder Entsorgen. Deshalb haben wir es zu unserer Aufgabe gemacht in Zukunft aus Verarbeitungswerten (nicht alltäglichen) Hölzern Massivholzmöbel herzustellen. Auf Unserem Facebook Account werden wir sie auf dem Laufenden halten.
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="global-container">
+        <div class="row">
+          <div class="col-md-6 about-content">
+          <p class="intro-p">Über uns</p>
+          <h3>Herzlich Willkommen bei der Baumpflege Redwood</h3>
+          <br>
+          <p>Ihr Berater und Dienstleister rund um Ihre Bäume in Frankfurt am Main und Umgebung.
+            <br>
+            <br>
+            Wir haben es uns zur Aufgabe gemacht, in unseren ständig wachsenden Ballungsgebieten, die Symbiose zwischen Mensch und Natur zu fördern und nachhaltig zu erhalten. Unsere Dienstleitungen reichen von der Pflanzung von Jungbäumen über die Baumpflege bis hin zur Baumfällung und auch darüber hinaus. Wir arbeiten überwiegend mit der Seilklettertechnik. Diese kommt zum Einsatz an Orten, die für Leitern oder schwere Arbeitsbühnen unzugänglich sind. Die Seilklettertechnik korrekt durchgeführt, erweist sich oft gegenüber der Arbeitsbühne als die wirtschaftlichere Alternative. Wir arbeiten mit qualifizierten und leidenschaftlichen Landschaftsgärtnern, Landschaftsarchitekten, Baumkletterern und Baumpflegern zusammen, denen das Wohlergehen der Bäume und der Menschen gleichermaßen am Herzen liegt.
+            <br>
+            <br>
+            Wir richten uns nach den anerkannten Richtlinien der ZTV-Baumpflege.
+          </p>
+          <button type="button" class="btn btn-dark about-btn">Jetzt Kontaktieren</button>
+        </div>
+        <div class="col-md-6 about-img-col">
+          <img class="about-image" src="static/images/palmenarbeit.jpg" alt="palmenarbeit">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="team">
+      <div class="global-container">
+        <div class="title">
+          <h2>Das sind Wir.</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+            <div id="recipeCarousel" class="carousel carousel1 slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item carousel-item1 active">
+                      <div class="col-md-3 m-4">
+                        <div class="card">
+                          <div class="card-img">
+                            <img src="static/images/niko2.jpg" class="img-fluid">
+                          </div>
+                          <h5>Niko</h5>
+                          <div class="wrapper">
+                            <p>European Tree Technician</p>
+                            <p>FLL-Zertifizierter Baumkontrolleur</p>
+                            <p>SKT B</p>
+                            <p>Fachkunde Hubarbeitsbühnen</p>
+                            <p>Fachkunde Artenschutz</p>
+                            <p>Sachkundig für PSA gegen Absturz</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                      <div class="col-md-3 m-4">
+                        <div class="card">
+                          <div class="card-img">
+                            <img src="static/images/oli2.jpg" class="img-fluid">
+                          </div>
+                          <h5>Oli</h5>
+                          <div class="wrapper">
+                            <p>Gärtnermeister & Baumpfleger</p>
+                            <p>AS Baum 1</p>
+                            <p>SKT A</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                      <div class="col-md-3 m-4">
+                        <div class="card">
+                          <div class="card-img">
+                            <img src="static/images/consti2.jpg" class="img-fluid">
+                          </div>
+                          <h5>Consti</h5>
+                          <div class="wrapper">
+                            <p>Baumpfleger</p>
+                            <p>Fachkunde Hubarbeitsbühnen</p>
+                            <p>AS Baum 1</p>
+                            <p>SKT A</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                    <img class="carousel-button" src="static/images/caret-right-solid.svg" alt="next">
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next">
+                  <img class="carousel-button" src="static/images/caret-right-solid.svg" alt="next">
+                </a>
+            </div>
+          </div>
+      </div>
+      </section>
+      <section id="contact">
+        <div class="global-container">
+        <div class="title">
+            <h2>Kontaktieren Sie uns.</h2>
+            <div class="underline"></div>
+          </div>  
+      <h3 class="how-to-contact">So funktioniert's:</h3>
+      <div class="row contact-instr-row">
+        <div class="col-md-4">
+          <p>1. Unverbindlich Kontakt aufnehmen</p>
+        </div>
+        <div class="col-md-4">
+          <p>2. Kurzes Telefonat oder E-Mail-Wechsel</p>
+        </div>
+        <div class="col-md-4">
+          <p>3. Angebot erhalten</p>
+        </div>
+      </div>
+      <div class="row contact-row">
+          <div  class="col-md-4 contact-card">
+          <img class="icon" src="static/images/envelope-solid.svg" alt="email-icon">
+            <a href="mailto:info@baumpflege-redwood.de">info@baumpflege-redwood.de
+            </a>
+            <p>Schreiben Sie uns gerne eine E-Mail.</p>
+          </div>
+        <div class="col-md-4 contact-card">
+            <img class="icon" src="static/images/mobile-screen-solid.svg" alt="mobile-icon">
+            <a href="tel:+4915772044422">+4915772044422</a>
+            <p>Oder rufen Sie uns einfach direkt an.
+              <br>
+              Montag - Freitag: 08:00 - 16:00 Uhr</p>
+            </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="global-container">
+      <div class="title">
+        <h2>Unsere Galerie.</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="row">
+        <div id="recipeCarousel2" class="carousel carousel2 slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner carousel-inner2" role="listbox">
+                <div class="carousel-item carousel-item2 active">
+                  <div class="col-md-5 m-2">
+                    <div class="gallery-card">
+                      <div class="gallery-img">
+                        <img src="static/images/working.JPG" class="img-fluid">
+                      </div>
+                      <h5></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                  <div class="col-md-5 m-2">
+                    <div class="gallery-card">
+                      <div class="gallery-img">
+                        <img src="static/images/workingFrankfurt.JPG" class="img-fluid">
+                      </div>
+                      <h5></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                  <div class="col-md-5 m-2">
+                    <div class="gallery-card">
+                      <div class="gallery-img">
+                        <img src="static/images/workingTree.JPG" class="img-fluid">
+                      </div>
+                      <h5></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+                <img class="carousel-button" src="static/images/caret-right-solid.svg" alt="next">
+            </a>
+            <a class="carousel-control-next" href="#recipeCarousel2" role="button" data-bs-slide="next">
+              <img class="carousel-button" src="static/images/caret-right-solid.svg" alt="next">
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <footer>
+        <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+        <a class="footer-link" href="impressum.html">Impressum</a>
+        <div class="footer-container">
+          <a class="footer-icon" href="mailto:info@baumpflege-redwood.de"><img src="static/images/envelope-solid.svg" alt="email-icon"></a>
+          <a class="footer-icon" href=""><img src="static/images/facebook-square-brands.svg" alt="facebook-icon"></a>
+          <a class="footer-icon" href=""><img src="static/images/instagram-brands.svg" alt="instagram-icon"></a>
+          <a class="footer-icon" href="tel:+4915772044422"><img src="static/images/mobile-screen-solid.svg" alt="mobile-icon"></a>
+        </div>
+        <p>Copyright &copy 2018 - Baumpflege Redwood
+        </p>
+    </footer>
+    <script type="module" defer src="/static/cookieconsent-2.8.0/dist/cookieconsent.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module">
+             window.addEventListener('load', function(){
+        const cc = initCookieConsent();
+        // basic configuration
+        cc.run({
+            current_lang : 'en',
+            theme_css : 'static/cookieconsent-2.8.0/dist/cookieconsent.css"',
+            onAccept : function(){
+            },
+            onChange: function(){
+                // preferences changed, do something
+            },
+            delay: 500,
+            coookie_expiration: 182,
+            cookie_path: "/",
+            page_scripts: true,
+            languages : {
+                en : {
+                    consent_modal : {
+                        title :  "Wir verwenden cookies",
+                        description :  'Wir haben die Nutzung von Drittanbietercookies minimal beschränkt. Wir setzen Cookies um Ihre Internet Nutzererfahrung zu verbessern und unseren Traffic zu analysieren.',
+                        primary_btn: {
+                            text: 'Cookies zulassen',
+                            role: 'accept_all'  //'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text : 'Einstellungen',
+                            role : 'settings'   //'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal : {
+                        title : 'Cookie Einstellung',
+                        save_settings_btn : "Einstellungen speichern",
+                        accept_all_btn : "Auswahl erlauben",
+                        reject_all_btn : "Auswahl ablehnen",
+                        close_btn_label: "Schließen",
+                        layout: 'box',                 // box/bar
+                  // position: 'left',           // left/right
+                        transition: 'slide',    
+                        blocks : [
+                            {
+                                title : "Cookie Nutzung",
+                                description: 'Wir setzen Cookies um deine Internet Nutzererfahrung zu verbessern und unseren Traffic zu analysieren.'
+                            },{
+                                title : "Notwendige Cookies",
+                                description: 'Notwendige Cookies helfen dabei, eine Webseite nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugriff auf sichere Bereiche der Webseite ermöglichen. Die Webseite kann ohne diese Cookies nicht richtig funktionieren.',
+                                toggle : {
+                                    value : 'necessary',
+                                    enabled : true,
+                                    readonly: true
+                                }
+                            },{
+                                title : "Statistik Cookies",
+                                description: 'Statistik-Cookies helfen Webseiten-Besitzern zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden.',
+                                toggle : {
+                                    value : 'analytics',
+                                    enabled : false,
+                                    readonly: false
+                                }
+                            },
+                            {
+                                title : "Marketing Cookies",
+                                description: 'Marketing-Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer sind und daher wertvoller für Publisher und werbetreibende Drittparteien sind.',
+                                toggle : {
+                                    value : 'marketing',
+                                    enabled : false,
+                                    readonly: false
+                                }
+                            },
+                        ]
+                    }
+                }
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
+    
