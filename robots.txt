@@ -1,0 +1,5 @@
+User-agent: *
+Allow: *
+Disallow: /impressum.html/
+Disallow: /datenschutz.html/
+Sitemap: https://www.baumpflege-redwood.de/sitemap.xml
