@@ -30,6 +30,8 @@
   </header>
   <section class="extra">      
     <h2>Datenschutzerkl&auml;rung</h2>
+    <h2>Cookie Präferenzen</h2>
+    <button class="btn btn-dark mb-3" type="button" data-cc="c-settings">Cookie Einstellungen öffnen</button>
     <h3><br></h3>
     <p>Diese Datenschutzerkl&auml;rung kl&auml;rt Sie &uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz &bdquo;Daten&ldquo;) im Rahmen der Erbringung unserer Leistungen sowie innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&auml;senzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als &bdquo;Onlineangebot&ldquo;). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &bdquo;Verarbeitung&ldquo; oder &bdquo;Verantwortlicher&ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).<br><br></p>
     <h3>Verantwortlicher</h3>
@@ -75,6 +77,15 @@
   <p><br></p>
   <p>Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Inhalts- oder Serviceangebote von Drittanbietern ein, um deren Inhalte und Services, wie z.B. Videos oder Schriftarten einzubinden (nachfolgend einheitlich bezeichnet als &ldquo;Inhalte&rdquo;).<br><br>Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden k&ouml;nnten. Die IP-Adresse ist damit f&uuml;r die Darstellung dieser Inhalte erforderlich. Wir bem&uuml;hen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter k&ouml;nnen ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als &quot;Web Beacons&quot; bezeichnet) f&uuml;r statistische oder Marketingzwecke verwenden. Durch die &quot;Pixel-Tags&quot; k&ouml;nnen Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen k&ouml;nnen ferner in Cookies auf dem Ger&auml;t der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.</p>
   <p><br></p>
+  <h3>Statistik</h3>
+  <p>Die in diesem Abschnitt enthaltenen Dienste ermöglichen es dem Eigentümer, den Webverkehr zu überwachen und zu analysieren, und können verwendet werden, um das Nutzerverhalten zu verfolgen.</p>
+  <h4>Google Analytics (Google Ireland Limited)</h4>
+  <p>Google Analytics ist ein Webanalysedienst, der von Google Ireland Limited ("Google") bereitgestellt wird. Google verwendet die gesammelten Daten, um die Nutzung dieser Anwendung zu verfolgen und zu untersuchen, um Berichte über seine Aktivitäten zu erstellen und sie mit anderen Google-Diensten zu teilen.
+    Google kann die gesammelten Daten verwenden, um die Anzeigen seines eigenen Werbenetzwerks zu kontextualisieren und zu personalisieren.</p>
+    <p>Verarbeitete personenbezogene Daten: Tracker; Nutzungsdaten.</p>
+    <p>Ort der Verarbeitung: Irland - <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Datenschutzbestimmungen</a>  &ndash;&nbsp;<a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">Opt Out</a>.</p>
+    <p>Kategorie der gemäß CCPA erfassten personenbezogenen Daten: Internetinformationen.</p>
+    <p>Diese Verarbeitung stellt einen Verkauf im Sinne der Definition des CCPA dar. Zusätzlich zu den Informationen in dieser Klausel findet der Nutzer Informationen darüber, wie er dem Verkauf widersprechen kann, in dem Abschnitt, der die Rechte der kalifornischen Verbraucher beschreibt.</p>
 </section>
 <footer>
   <a class="footer-link" href="/index.html">Start</a>
@@ -88,5 +99,80 @@
   <p>Copyright &copy 2018 - Baumpflege Redwood
   </p>
 </footer>
+<script type="module" defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.js"></script>
+<script type="module">
+     const cc = initCookieConsent();
+        // basic configuration
+        cc.run({
+            current_lang : 'en',
+            theme_css : 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.css',
+            onAccept : function(){
+            },
+            onChange: function(){
+                // preferences changed, do something
+            },
+            delay: 500,
+            coookie_expiration: 182,
+            cookie_path: "/",
+            page_scripts: true,
+            languages : {
+                en : {
+                    consent_modal : {
+                        title :  "Wir verwenden cookies",
+                        description :  'Wir haben die Nutzung von Drittanbietercookies minimal beschränkt. Wir setzen Cookies um Ihre Internet Nutzererfahrung zu verbessern und unseren Traffic zu analysieren.',
+                        primary_btn: {
+                            text: 'Cookies zulassen',
+                            role: 'accept_all'  //'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text : 'Einstellungen',
+                            role : 'settings'   //'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal : {
+                        title : 'Cookie Einstellung',
+                        save_settings_btn : "Einstellungen speichern",
+                        accept_all_btn : "Auswahl erlauben",
+                        reject_all_btn : "Auswahl ablehnen",
+                        close_btn_label: "Schließen",
+                        layout: 'box',                 // box/bar
+                  // position: 'left',           // left/right
+                        transition: 'slide',    
+                        blocks : [
+                            {
+                                title : "Cookie Nutzung",
+                                description: 'Wir setzen Cookies um deine Internet Nutzererfahrung zu verbessern und unseren Traffic zu analysieren.'
+                            },{
+                                title : "Notwendige Cookies",
+                                description: 'Notwendige Cookies helfen dabei, eine Webseite nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugriff auf sichere Bereiche der Webseite ermöglichen. Die Webseite kann ohne diese Cookies nicht richtig funktionieren.',
+                                toggle : {
+                                    value : 'necessary',
+                                    enabled : true,
+                                    readonly: true
+                                }
+                            },{
+                                title : "Statistik Cookies",
+                                description: 'Statistik-Cookies helfen Webseiten-Besitzern zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden.',
+                                toggle : {
+                                    value : 'analytics',
+                                    enabled : false,
+                                    readonly: false
+                                }
+                            },
+                            {
+                                title : "Marketing Cookies",
+                                description: 'Marketing-Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer sind und daher wertvoller für Publisher und werbetreibende Drittparteien sind.',
+                                toggle : {
+                                    value : 'marketing',
+                                    enabled : false,
+                                    readonly: false
+                                }
+                            },
+                        ]
+                    }
+                }
+            }
+        });
+</script>
 </body>
 </html>
