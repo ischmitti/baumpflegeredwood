@@ -141,15 +141,6 @@ footer{
   background-position: 65%;
 }
 
-@keyframes fading {
-  0%{ opacity: 0;
-    
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
 .hero-content{
   text-align: center;
   position: absolute;
@@ -161,9 +152,19 @@ footer{
   top: 65%;
   right: auto;
   padding: 1em;
+  opacity: 0;
   animation: fading 3000ms;
   animation-delay: 1000ms;
   animation-fill-mode: forwards;
+}
+
+@keyframes fading {
+  0%{ opacity: 0;
+    
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 h1{
@@ -243,8 +244,8 @@ h3{
   margin: 0.5em 0 1em;
   border-radius: 12px;
   background-color: #0B0B3B !important;
-  color: white;
-  padding: 0.75em 1.25em;
+  color: white !important;
+  padding: 0.75em 1.25em !important;
 }
 .about-btn:hover{
   transform: scale(1.05);
